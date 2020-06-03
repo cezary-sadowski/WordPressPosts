@@ -9,12 +9,14 @@ import { MatCardModule } from '@angular/material/card';
 import { PostsComponent } from './posts/posts.component';
 import { PostsService } from './posts.service';
 import { SummaryPipe } from './summary.pipe';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
-    SummaryPipe
+    SummaryPipe,
+    PostComponent
   ],
   imports: [
     BrowserModule,

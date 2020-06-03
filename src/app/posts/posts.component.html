@@ -8,6 +8,7 @@
   <mat-card-title>{{ post.title }}</mat-card-title>
   <mat-card-content [innerHTML]="post.content | summary" ></mat-card-content>
   <img mat-card-image [src]="post.featured_image"/>
+  <mat-card-footer style="padding:10px">{{ post.author.name }}</mat-card-footer>
 
 </mat-card>
 
