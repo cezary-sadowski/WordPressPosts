@@ -1,1 +1,9 @@
-<p>post works!</p>
+<mat-card>
+    <mat-list>
+        <mat-list-item *ngFor="let comment of comments">{{ comment.raw_content }}</mat-list-item>
+    </mat-list>
+    <mat-card-title>{{ post.title }}</mat-card-title>
+    <img mat-card-image [src]="post.featured_image" />
+    <mat-card-content [innerHTML]="post.content"></mat-card-content>
+    <mat-card-footer style="padding:10px">{{ post.author.name }}</mat-card-footer>
+</mat-card>

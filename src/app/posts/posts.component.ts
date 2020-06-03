@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { PostsService } from '../posts.service';
 
 @Component({
@@ -23,5 +23,4 @@ export class PostsComponent implements OnInit {
         this.totalPosts = response.posts.length;
       })
   }
-
 }
