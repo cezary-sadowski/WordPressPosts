@@ -6,7 +6,7 @@
   totalItems: totalPosts }" style="margin-bottom:10px">
   
   <mat-card-title>{{ post.title }}</mat-card-title>
-  <mat-card-content [innerHTML]="post.content | slice:0:400" ></mat-card-content>
+  <mat-card-content [innerHTML]="post.content | summary" ></mat-card-content>
   <img mat-card-image [src]="post.featured_image"/>
 
 </mat-card>

@@ -8,11 +8,13 @@ import { NgxPaginationModule } from 'ngx-pagination'
 import { MatCardModule } from '@angular/material/card';
 import { PostsComponent } from './posts/posts.component';
 import { PostsService } from './posts.service';
+import { SummaryPipe } from './summary.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
+    SummaryPipe
   ],
   imports: [
     BrowserModule,
