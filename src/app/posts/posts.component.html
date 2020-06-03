@@ -1,1 +1,17 @@
-<p>posts works!</p>
+
+<mat-card *ngFor="let post of posts 
+  | paginate: { id: 'listing_pagination',
+  itemsPerPage: 10,
+  currentPage: page,
+  totalItems: totalPosts }" style="margin-bottom:10px">
+  
+  <mat-card-title>{{ post.title }}</mat-card-title>
+  <mat-card-content [innerHTML]="post.content | slice:0:400" ></mat-card-content>
+  <img mat-card-image [src]="post.featured_image"/>
+
+</mat-card>
+
+<div>
+    <pagination-controls id="listing_pagination" maxSize="5" directionLinks="true" (pageChange)="page = $event">
+    </pagination-controls>
+</div>
