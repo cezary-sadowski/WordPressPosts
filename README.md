@@ -1,10 +1,15 @@
   ## Code structure
   
-  WordPressPosts/src/app/posts.service.ts       - Communicating with API using HTTP
-  WordPressPosts/src/app/app-routing.module.ts  - Router
-  WordPressPosts/src/app/summary.pipe.ts        - Custom pipe to splice posts description
-  WordPressPosts/src/app/posts                  - Posts array handling and pagination (component)
-  WordPressPosts/src/app/post                   - Single post and comments per post (component)
+  
+WordPressPosts/src/app/posts.service.ts       - Communicating with API using HTTP
+  
+WordPressPosts/src/app/app-routing.module.ts  - Router
+ 
+WordPressPosts/src/app/summary.pipe.ts        - Custom pipe to splice posts description
+  
+WordPressPosts/src/app/posts                  - Posts array handling and pagination (component)
+  
+WordPressPosts/src/app/post                   - Single post and comments per post (component)
   
   with Angular Material.
 
